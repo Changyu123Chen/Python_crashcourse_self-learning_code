@@ -1,0 +1,40 @@
+'''
+修改列表元素的语法与访问列表元素的语法类似。要修改列表元素，
+可指定列表名和要修改的元素的索引，再指定该元素的新值。
+'''
+names = ["张三","李四","王二麻"]
+print(names)
+names[0] = "小明"
+print(names)
+names.append("张三")
+print(names)
+names.insert(0, 'Alice')
+print(names)
+del names[0]
+print(names)
+#方法pop() 可删除列表末尾的元素，并让你能够接着使用它
+'''
+方法pop() 是怎么起作用的呢?假设列表中的摩托车是按购买时间存储的，
+就可使用方法pop() 打印一条消息，指出最后购买的是哪款摩 托车
+'''
+popped_names = names.pop()
+print(popped_names)
+print(names)
+'''
+实际上，你可以使用pop() 来删除列表中任何位置的元素，
+只需在括 号中指定要删除的元素的索引即可。
+'''
+names1 = names.pop(1)
+print(names1)
+print(names)
+'''
+如果你要从列表中删除一个元素，且不再以任何方式使用它，就使用del 语句;
+如果你要在删除元素后还能继续使用它，就使 用方法pop() 。
+'''
+fruits = ['cherry','orange','apple','peach','pear','pear']
+fruits.remove('cherry')
+print(fruits)
+'''
+remove() 只删除第一个指定的值。如果要删除的值 可能在列表中出现多次，
+就需要使用循环来判断是否删除了所有 这样的值。
+'''

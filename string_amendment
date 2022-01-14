@@ -1,0 +1,30 @@
+#字符大小写
+a = "who are u"
+print(a.title())#各个单词首字母大写
+print(a. upper())#所有字母大写
+b = "I LOVE YOU THREE THOUSAND!"
+print(b.lower())#所有字母小写
+#连接字符
+full = a + " " + b
+print(full)
+#使用制表符或换行符来添加空白
+print("\tpython")# \t表示tab，即空4格
+print("I\nLove\nYou")#表示换行输出
+print("Language\n\tPython\n\tC++\n\tJava\n\tC")
+'''
+字符串"\n\t" 让 Python换到下一行，并在下一行开头添加一个制表符。
+'''
+#删除字符串结尾多余的空格
+c = ' i l n jjj'
+print(c.rstrip())
+#这种删除是暂时的，若要永久删除，需要将删除操作的结果保存回到变量中
+c = c.rstrip()
+#删除字符串开头多余的空格
+c = ' i l n jjj'
+print(c.lstrip())
+#删除字符串开头结尾多余的空格
+c = ' i l n jjj'
+print(c.strip())
+‘’‘
+这些剥除函数最常用于在存储用户输入前对其进行清 理。
+’‘’

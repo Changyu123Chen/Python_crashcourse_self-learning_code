@@ -1,0 +1,13 @@
+'''
+个性化消息: 将用户的姓名存到一个变量中，并向该用户显示 一条消息。
+'''
+name = 'Eric'
+print("Hello"+ " " + name+ ", would you like to learn some Python today?")
+
+'''
+调整名字的大小写: 将一个人名存储到一个变量中，再以小 写、大写和首字母大写的方式显示这个人名。
+'''
+a = 'Changyu chen'
+print(a.lower())
+print(a.upper())
+print(a.title())
